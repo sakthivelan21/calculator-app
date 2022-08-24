@@ -1,0 +1,22 @@
+.calculator-display-container
+{
+    border: 2px solid var(--primary-input-border-color);
+    height: 5rem;
+    width: 98%;
+    border-radius: 5px;
+    margin:0 auto;
+}
+
+.calculator-current,.calculator-result{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+@media screen and (max-width:880px) {
+    .calculator-display-container{
+        width: 100%;
+        
+    }
+}
+

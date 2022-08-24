@@ -1,0 +1,54 @@
+.button{
+    background-color: var(--primary-button-bg-color);
+    border: 1px solid var(--primary-button-border-color);
+    color:var(--primary-font-color);
+    margin: 10px ;
+    font-size: 1.15rem;
+    cursor: pointer;
+    width: 85px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+}
+
+.number-button{
+    background-color: var(--primary-number-button-bg-color);
+}
+
+.equal-to-button{
+    color: var(--primary-white);
+    background-color:var(--primary-equal-to-button-bg-color);
+}
+
+
+
+.button:hover{
+    background-color: var(--primary-button-hov-bg-color);
+}
+
+.equal-to-button:hover{
+    background-color: #709ae1;
+}
+
+.number-button:hover{
+    background-color: var(--primary-number-button-hov-bg-color);
+}
+
+@media screen and (max-width: 650px) {
+    .button{
+        width:75px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .button{
+        width:65px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .button{
+        width: 55px;
+    }
+}
