@@ -39,10 +39,10 @@ function App() {
     }
   
     document.documentElement.setAttribute("data-theme", theme);
+
   },[]);
 
   
-
   return (
     <>
       <NavBar {...navBarModel}/>

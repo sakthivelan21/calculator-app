@@ -2,7 +2,7 @@
 {
     border: 2px solid var(--primary-input-border-color);
     height: 5rem;
-    width: 98%;
+    width: 60%;
     border-radius: 5px;
     margin:0 auto;
 }
@@ -12,11 +12,12 @@
     justify-content: flex-end;
     margin: 5px;
     font-size: 1.2rem;
+    height: 2rem;
 }
 @media screen and (max-width:880px) {
     .calculator-display-container{
-        width: 100%;
-        
+        width: 95%;
+        margin: 0 auto;
     }
 }
 

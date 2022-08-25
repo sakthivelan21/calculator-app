@@ -1,13 +1,13 @@
 import React from 'react';
 import './CalculatorDisplay.css'
-function CalculatorDisplay(){
+function CalculatorDisplay({topDisplay,display}){
     return(
         <div className='calculator-display-container'>
             <div className="calculator-result">
-                calculator display
+                {topDisplay}
             </div>
             <div className="calculator-current">
-                calculator current
+                {display}
             </div>
         </div>
     )

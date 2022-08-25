@@ -35,9 +35,9 @@
     background-color: var(--primary-number-button-hov-bg-color);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 560px) {
     .button{
-        width:75px;
+        width:70px;
     }
 }
 

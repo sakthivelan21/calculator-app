@@ -2,7 +2,7 @@ import React from 'react';
 import "./Footer.css"
 function Footer() {
     return (
-        <div className="footer">
+        <div className="footer" id="Support">
             <div className="footer-heading-flex">
                 <h3 className="footer-heading">Calculator</h3>
                 <div className="footer-website-links">

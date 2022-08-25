@@ -1,8 +1,9 @@
 import React from 'react';
 import "./NavButton.css"
-function NavButton({title,iconClass,navButtonClassName}){
+function NavButton({title,iconClass,navButtonClassName,handleEvent}){
+   
     return(
-        <div className={navButtonClassName}>
+        <div className={navButtonClassName} onClick={()=> handleEvent(title)}>
             <h3 className="nav-button">
                 <i className={ `nav-button-icon ${iconClass}` }></i>
                 {title}

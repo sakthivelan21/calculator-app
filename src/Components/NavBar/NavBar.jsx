@@ -6,6 +6,15 @@ function NavBar({title,iconClass,imgSrc,navButtonList}){
     const [showSideNav,setShowSideNav]=useState(false);
     const openSideNav=()=> setShowSideNav(true);
     const closeSideNav=()=>setShowSideNav(false);
+    const scrollTo=(elementName)=>{
+        const element = document.getElementById(elementName);
+        element.scrollIntoView({block: "end"});
+    }
+    const sideNavScrollTo=(elementName)=>{
+        const element = document.getElementById(elementName);
+        element.scrollIntoView({block: "end"});
+        closeSideNav();
+    }
     return(
         <>
             <div className='nav-bar'>
@@ -20,7 +29,7 @@ function NavBar({title,iconClass,imgSrc,navButtonList}){
                     <ThemeButton/>
                     {
                         navButtonList.map((navButton,index)=>
-                            <NavButton navButtonClassName="nav-button-holder" key={index} {...navButton} />
+                            <NavButton navButtonClassName="nav-button-holder" key={index} {...navButton} handleEvent={scrollTo} />
                         )
                     }
 
@@ -52,7 +61,7 @@ function NavBar({title,iconClass,imgSrc,navButtonList}){
                     <div className="nav-bar-side-menu-links">
                         {
                             navButtonList.map((navButton,index)=>
-                                <NavButton key={index} {...navButton} navButtonClassName="nav-button-side-holder" />
+                                <NavButton key={index} {...navButton} navButtonClassName="nav-button-side-holder"  handleEvent={sideNavScrollTo}/>
                             )
                         }
                     </div>
